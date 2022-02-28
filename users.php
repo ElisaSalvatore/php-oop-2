@@ -1,6 +1,5 @@
 <?php
-require_once "./classes/toy.php";
-require_once "./classes/food.php";
+require_once "./classes/registeredUser.php";
 
 /* E-SHOP
  L’e-commerce vende prodotti per gli animali.
@@ -9,23 +8,12 @@ require_once "./classes/food.php";
  Il pagamento avviene con la carta di credito, che non deve essere scaduta.
 */
 
-class Product {
-    public string $brand;
+class User {
     public $name;
-    public int $price;
-    public $description;
+    public $surname;
+    public $email;
 
     // GET AND SET THE VALUE
-    //BRAND VALUE
-    public function getBrand() {
-        return $this->brand;
-    }
-    public function setBrand($brand) {
-        $this->brand = $brand;
-    
-        return $this;
-    }
-
     //NAME VALUE
     public function getName() {
         return $this->name;
@@ -36,30 +24,30 @@ class Product {
         return $this;
     }
 
-    //PRICE VALUE
-    public function getPrice() {
-        return $this->price;
+    //SURNAME VALUE
+    public function getSurname() {
+        return $this->surname;
     }
-    public function setPrice($price) {
-        $this->price = $price;
+    public function setSurname($surname) {
+        $this->surname = $surname;
     
         return $this;
     }
 
-    //DESCRIPTION VALUE
-    public function getDescription() {
-        return $this->description;
+     //EMAIL VALUE
+     public function getEmail() {
+        return $this->email;
     }
-    public function setDescription($description) {
-        $this->description = $description;
+    public function setEmail($email) {
+        $this->email = $email;
     
         return $this;
     }
-    
+
 }
 
-// $product = new Product();
-// var_dump($product);
+// $user = new User();
+// var_dump($user)
 
 ?>
 
@@ -69,9 +57,9 @@ class Product {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCTS E-SHOP</title>
+    <title>USERS E-SHOP</title>
 </head>
 <body>
-
+ 
 </body>
 </html>
