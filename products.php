@@ -58,9 +58,14 @@ class Product {
     
 }
 
-$product = new Product();
-var_dump($product);
+// $product = new Product();
+// var_dump($product);
 
+$ball = new Toy("DOGame", "Pet Ball", "5.50", "Un giocattolo che farà impazzire il tuo amico a quattro zampe!", "Plastic");
+
+$cannedMeat = new Food("Almo Nature", "Canned Food", "2.99", "Bocconcini di pollo in scatola.", "2025-01-01", "Morsels");
+
+var_dump($ball, $cannedMeat)
 ?>
 
 <!DOCTYPE html>
@@ -72,6 +77,6 @@ var_dump($product);
     <title>PHP OOP E-SHOP</title>
 </head>
 <body>
-    <h1>E-COMMERCE</h1>
+    <h1>PET E-COMMERCE</h1>
 </body>
 </html>
